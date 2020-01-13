@@ -74,9 +74,7 @@ class ADTassign{
         myAnswer = sub3.sumOfTwo(arrs); // I call the method and it return sum of each array
         System.out.println("This is the sum of the first row " + myAnswer[0]); // show the answer in the first row
         System.out.println("This is the sum of the first row " + myAnswer[1]); // show the answer in the second row
-        System.out.println("This is the sum of two array " + myAnswer[0] + myAnswer[1]);//show the sum of two array
-        System.out.println("===========End Part 3=========");
-        /* ===========End Part 3========  */
+        System.out.println("This is the sum of System.out.println(Kouy);
 
 
     }
