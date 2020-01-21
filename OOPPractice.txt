@@ -1,0 +1,17 @@
+Create backet that can cotain total 30 fruits
+this backet can only collect 
+    apple that cost 2 - 5 
+    orange that cost 2 - 4
+    tomato that cost 2 - 7
+    and the fruits also have 3 color which is red purple green
+    
+   backet has 3 method 
+    - getcost method is a method that can only return the total cost as double
+    - getType method is a method that show how many apple , orange , tomato and their uniqe attribute
+        ex. red apple1 5$
+            green apple2 2$
+            .
+            .
+            .
+            green tomatoN 6$
+    - getSize return only size of backet
