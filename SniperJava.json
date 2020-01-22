@@ -1,0 +1,108 @@
+{
+"Public Void":			{
+	"prefix": "pv",
+	"body": ["public void V(){}"],
+	"description": "Public Void"
+						}
+							
+,
+"Public String":		{
+	"prefix": "ps",
+	"body": ["public String V(){ return this.V;}"],
+	"description": "Public String"
+						}
+						
+,
+"Public Int":			{
+	"prefix": "pi",
+	"body": ["public int V(int V){ return this.V;}"],
+	"description": "Public Int"
+						}
+						
+,
+"Public Float":			{
+	"prefix": "pf",
+	"body": ["public float V(float V){ return this.V;}"],
+	"description": "Public Float"
+						}
+						
+,
+"Run Class":		{
+	"prefix": "publics",
+	"body": ["public static void main(String[]args){ }"],
+	"description": "Run Class"
+					}
+,
+
+"Print": 	{
+ 	"prefix": "sout",
+ 	"body": ["System.out.println();"],
+	"description": "Print"
+			}
+,
+
+ "Import Scanner":	{
+	"prefix": "imscan",
+	"body": ["import java.util.Scanner;"],
+  	"description": "Import Scanner"
+					}
+,
+
+"Create Variable Scanner":	{
+	"prefix": "crscan",	
+	"body": ["Scanner V =new Scanner(System.in);"],
+   	"description": "Create Variable Scanner"
+							}
+,
+
+"Use Int Scanner":	{
+	"prefix": "inscan",
+	"body": ["int v = V.nextInt();"],
+	"description": "For Loop"
+					}
+,
+
+"Use Float Scanner":	{
+	"prefix": "flscan",
+	"body": ["float v = V.nextFloat();"],
+	"description": "Float Scanner"
+						}
+,
+
+"Use String Scanner":	{
+	"prefix": "stscan",
+	"body": ["String v = V.nextLine();"],
+	"description": "Use String Scanner"
+						}
+
+,
+"String":				{
+	"prefix": "str",
+	"body": ["String v = ;"],
+   	"description": "Use String"
+						}
+
+,
+"Int":					{
+	"prefix": "in",
+	"body": ["int v = ;"],
+  	"description": "Use Int"
+						}
+
+,
+"Float":				{
+	"prefix": "flo",
+	"body": ["float v = ;"],
+   	"description": "Use Float"
+						}
+
+,
+"ForLoop":				{
+	"prefix": "for",
+	"body": ["for(i=1;i=n;i++){ }"],
+	"description": "For Loop"
+						}
+
+,
+
+}
