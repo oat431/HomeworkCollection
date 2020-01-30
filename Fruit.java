@@ -1,52 +1,69 @@
-package com.company;
+import java.util.*;
 
-public class Fruit {
-    private String type;
-    private String name;
-    private String color;
-    private double cost;
+public class Fruit(){
 
-    public Fruit(){}
+  public static void main(String arg[]){
 
-    public Fruit(int n, int m, double cost, String name ){
-        switch (n){
-            case 1:
-                this.type = "Apple";
-                break;
-            case 2:
-                this.type = "Orange";
-                break;
-            case 3:
-                this.type = "Tomato";
-                break;
+    String type;
+    String color;
+    int name;
+    double price;
+
+    public Fruit(){
+
+    }
+
+    public Fruit(int c, int x, int y, int z){
+
+      public void randomColor(){
+
+          public int randPrice(){
+            switch (c){
+              case 1:
+              return (int)(Math.random() * 5) + 2;
+              break;
+              case 2:
+              return (int)(Math.random() * 4) + 2;
+              break;
+              case 3:
+              return (int)(Math.random() * 7) + 2;
+              break;
+              }
+              }
+            switch (x){
+              case 1:
+              System.out.println("Apple");
+              break;
+              case 2:
+              System.out.println("Orange");
+              break;
+              case 3:
+              System.out.println("Tomato");
+              break;
+              }
+            switch (y){
+              case 1:
+              System.out.println("Red");
+              break;
+              case 2:
+              System.out.println("Purple");
+              break;
+              case 3:
+              System.out.println("Green");
+              break;
+              }
+            switch (z){
+              case 1:
+              System.out.println(randPrice());
+              break;
+              case 2:
+              System.out.println(randPrice());
+              break;
+              case 3:
+              System.out.println(randPrice());
+              break;
+              }
+            }
+          }
         }
-
-        switch (m){
-            case 1:
-                this.color = "Purple";
-                break;
-            case 2:
-                this.color = "Red";
-                break;
-            case 3:
-                this.color = "Green";
-                break;
-        }
-        this.cost = cost;
-        this.name = name;
     }
-
-    public double getCost(){
-        return this.cost;
-    }
-
-    @Override
-    public String toString() {
-        return "Fruit{" +
-                "type='" + this.type + '\'' +
-                ", name='" + this.name + '\'' +
-                ", color='" + this.color + '\'' +
-                ", cost=" + String.format("%.2f",this.cost) +
-                '}';
-    }
-}
