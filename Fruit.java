@@ -4,11 +4,6 @@ public class Fruit(){
 
   public static void main(String arg[]){
 
-    String type;
-    String color;
-    int name;
-    double price;
-
     public Fruit(){
 
     }
