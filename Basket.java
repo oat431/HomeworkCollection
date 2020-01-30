@@ -15,11 +15,12 @@ public class Basket{
 
     public void Basket(){
 
-    }
-
-    public void getType(){
+      public void getType(){
       System.out.println(randColor() + randType() + randPrice() + "$")
     }
+    }
+
+    
 
   }
 }
