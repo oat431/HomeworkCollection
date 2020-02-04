@@ -1,6 +1,5 @@
-package com.company;
 import java.util.Stack;
-public class Main {
+class Main {
     private static boolean check(String word){
         Stack<Character> chk = new Stack<>();
         switch (word.charAt(0)){
