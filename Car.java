@@ -5,6 +5,7 @@ public class Car {
 
     public Car(){
 
+        String BrandList;
 
         
     }
@@ -74,6 +75,72 @@ public class Car {
         }
         return PriceList;
     }
+
+    public int[] setRent(){
+        Random index = new Random();
+        int[] RentList = new int[999];
+        for(int i = 0; i < RentList.length; i++){
+            int x = index.nextInt(5) + 1;
+            int y = 0;
+            switch (x){
+                case 1:
+                y = this.RentCost[0];
+                RentList[i] = y;
+                break;
+                case 2:
+                y = this.RentCost[1];
+                RentList[i] = y;
+                break;
+                case 3:
+                y = this.RentCost[2];
+                RentList[i] = y;
+                break;
+                case 4:
+                y = this.RentCost[3];
+                RentList[i] = y;
+                break;
+                case 5:
+                y = this.RentCost[4];
+                RentList[i] = y;
+                break;
+            }
+        }  
+        return RentList; 
+    }
+
+    public int[] setDown(){
+        Random index = new Random();
+        Random randDown = new Random();
+        int[] DownList = new int[999];
+        for(int i = 0; i < DownList.length; i++){
+            int x = index.nextInt(5) + 1;
+            int y = randDown.nextInt(maxDown[x]) + minDown[x];
+            switch (x){
+                case 1:
+                DownList[i] = y;
+                break;
+                case 2:
+                DownList[i] = y;
+                break;
+                case 3:
+                DownList[i] = y;
+                break;
+                case 4:
+                DownList[i] = y;
+                break;
+                case 5:
+                DownList[i] = y;
+                break;
+            }
+        }
+        return DownList;
+    }
     
+    public String[] CarInfo(){
+        String[] CarForSale = new String[999];
+        for(int i = 0; i < CarForSale.length; i++){
+            CarForSale[i] = setBrand()
+        }
+    }
 
 }
