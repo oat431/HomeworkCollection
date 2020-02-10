@@ -1,16 +1,12 @@
-//
-
 package app;
 import java.util.Random;
 
 public class Car {
 
     public Car(){
-
-        String BrandList;
-
-        
+  
     }
+
         String[] Brand = {"Tui", "Tho", "Toey", "Jo", "Pree"};
         int[] minPrice = {3000000, 2000000, 1000000, 500000, 20000} ;
         int[] maxPrice = {5000000, 3000000, 3000000, 1000000, 100000}; 
@@ -140,9 +136,19 @@ public class Car {
     
     public String[] CarInfo(){
         String[] CarForSale = new String[999];
+        String[] dataBrand = new String[999];
+        int[] dataPrice = new int[999];
+        int[] dataRent = new int[999];
+        int[] dataDown = new int[999];
+        dataBrand = setBrand();
+        dataPrice = setPrice();
+        dataRent = setRent();
+        dataDown = setDown();
+        
         for(int i = 0; i < CarForSale.length; i++){
-            CarForSale[i] = setBrand()
+            CarForSale[i] = dataBrand[i] + " " + dataPrice[i] + " " + dataRent[i] + " " + dataDown[i];
         }
+        return CarForSale;
     }
 
 }
