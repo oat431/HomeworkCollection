@@ -1,4 +1,3 @@
-package com.company;
 
 public class Queue {
     private Student[] stu;
