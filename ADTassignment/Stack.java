@@ -22,6 +22,7 @@ public class Stack {
             return null;
         }
         Student temp = stu[top-1];
+        stu[top-1] = null;
         top--;
         return temp;
     }
