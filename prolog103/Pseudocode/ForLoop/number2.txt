@@ -1,0 +1,13 @@
+START
+    READ num1
+    READ num2
+    INITIALIZE sum TO 0
+    
+    FOR num1 TO num2 STEP_BY 1
+        sum = sum + num1
+    ENDFOR
+    
+    WRITE sum
+END
+
+

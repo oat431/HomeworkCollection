@@ -1,0 +1,15 @@
+START
+    READ value
+    READ decrease
+    
+    WHILE value >= 0
+        WRITE value
+        WRITE "\n"
+        value = value - decrease
+    ENDWHILE
+    
+    IF value + decrease > 0
+        WRITE 0 - decrease
+    ENDIF
+END
+#define "\n" is endline    

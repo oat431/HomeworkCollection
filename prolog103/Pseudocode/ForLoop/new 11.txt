@@ -1,0 +1,10 @@
+START
+    READ num1
+    READ num2
+    SET sum TO 0
+    FOR i = num1 TO num2 STEP i BY 1
+        sum = sum + i
+        WRITE sum
+    ENDFOR
+END
+
