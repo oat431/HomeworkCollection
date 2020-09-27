@@ -1,0 +1,32 @@
+Database
+    An organized collection of data generally 
+    stored and can accessesd from a computer system
+    it will store permanent memory
+
+Data structure
+    A data oraganization management 
+    it will be either linear and non linear data 
+    but only store temporary memory
+    
+the big different between database and datastructure
+    database store collection of data and keep it forever
+    datastructure is just format of a data and keep it shortly
+    
+    
+    
+Sahachan ask nilawan love bad guy
+Nilawan ask thitinat lova 10000 hour
+thitinat ask decha he love demon
+decha ask sahachan he love something I need
+passakong ask hongjin dying for you
+Hongjin ask wenhao he love sorry Justin biber
+Wenhao ask Thanatorn he love be my mistake
+
+oat Kamphanephet chao kaui
+  Nilawan Chiang Mai Noodle
+  Decha Lampang Takoyaki
+Hongjin Kunming mushroom
+pasakon NaN steak
+Thanatorn CNX Pizza
+Thitinat chiangmai kfc
+wenhao Chengdu Tea
