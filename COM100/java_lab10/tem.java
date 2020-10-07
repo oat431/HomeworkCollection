@@ -5,20 +5,22 @@ public class tem {
         while(true){
             String input = in.next().toLowerCase();
             if(input.equals("c")){
-                break;
-            }else{
+                System.out.println(celcius());
+            }else if (input.equals("f")){
+                System.out.println(celcius());
+            }else {
                 break;
             }
         }
         System.out.println("This program has ended"); 
     }   
 
-    public static double celcius(double temp){
+    public static double celcius(){
         System.out.println("please enter your farenheit");
         return (in.nextDouble()-32) * (5.0/9.0);
     }
 
-    public static double farenheit(double temp){
+    public static double farenheit(){
         System.out.println("please enter your celcius");
         return ((in.nextDouble()*9)/5.0) + 32;
     }
