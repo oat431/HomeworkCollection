@@ -1,7 +1,7 @@
 # HomeworkCollection
 This is the place to keep SE old homework
-- That allow every one to edit it
-- allow every one to upload their homework 
+- That allow everyone to edit it
+- allow everyone to upload their homework 
 - this is the place to review homework please don't copy the work in here
 - also this place will upload the subject summary and I think it will be helpful for midterm/final exam
 - If you find the problem please open the issue on this repository
