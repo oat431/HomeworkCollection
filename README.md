@@ -8,6 +8,12 @@ This is the place to keep SE old homework
 - update every semester
 #### This is only the backup homework please don't copy it thank you.
 
+<hr>
+#### We need more contributor to do update this repo
+- Modify the wiki part
+- Check the content and open issues
+- Update the and add more content
+
 regard 
 &copy; CMU CAMT SE student 
 
