@@ -3,8 +3,8 @@ public class Node{
     private Node prev;
     public Student data;
 
-    public Node(Student s){
-
+    public Node(Student data){
+        this.data = data;   
         next=prev=null;
     }
 
