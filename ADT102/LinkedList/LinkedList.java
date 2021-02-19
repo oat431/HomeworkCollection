@@ -36,8 +36,9 @@ public class LinkedList{
     public void deleteLast(){
         Node temp = head;
         int s = this.size-1;
-        while(s-- > 0){
+        while(s > 0){
             temp = temp.next;
+            s--;
         }
         this.size--;
         temp.next = null;
