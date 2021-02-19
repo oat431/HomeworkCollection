@@ -6,5 +6,10 @@ public class Node{
         this.data = data;   
         next=null;
     }
+    
+    @override
+    public String toString(){
+        return data.toString();
+    }
 
 }
