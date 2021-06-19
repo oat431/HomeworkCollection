@@ -1,0 +1,64 @@
+Define: the first element of array start at index 0
+Define: Read() mean get input from the problem
+Define: new DataType[size] mean declare array
+
+Define: Building as an structure in this problem and it has own attribute which is
+    integer : lefPosition
+    integer : rightPosition
+    integer : high
+
+Define: Building(integer : L, integer : R, integer : H) :
+    lefPosition = L
+    rightPosition = R
+    high = H
+
+Define: getHigh():
+    return high
+
+Define: getRightPosition():
+    return rightPosition
+
+Define: getLeftPosition():
+    return leftPosition
+
+Start
+    t <- Read()
+    city <- new Building[t]
+    
+    # input part
+    For Let i <- 0 To t-1 Step i By 1 Then  
+        L <- Read()
+        R <- Read()
+        H <- Read()
+        city[i] <- Building(L,R,H)
+    EndFor
+
+    
+    # process part
+    cityBouder <- city[0].getRightPosition()
+
+    For Let i <- 0 To t-1 Step i By 1 Then
+        If cityBouder < city[i].getRightPosition() Then
+            cityBouder <- city[i].getRightPosition()
+        EndIf
+    EndIf
+
+    For Let i <- 0 To t-1 Step i By 1 Then 
+        For Let j <- city[i].getLeftPosition() To city[i].getRightPosition()-1 Step j By 1 Then 
+            If newcity[j] < city[i].getHigh() Then
+                newcity[j] <- city[i].getHigh()
+            EndIf
+        Endfor
+    Endfor
+
+    newcity <- new Integer[cityBouder+2]
+    
+    #output part
+    oldHigh <- 0
+    For Let i <- 0 To cityBouder Step i By 1 Then 
+        If oldHigh != newcity[i] Then
+            Display i " " newcity[i] " "
+            oldHigh <- newcity[i] 
+        EndIf
+    EndFor
+End

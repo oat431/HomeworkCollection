@@ -1,0 +1,43 @@
+If P1 then P2 else P3
+
+1.  P1, P2, P3 = O(n^2), O(nlogn), O(n)
+    What’s the time complexity ?
+    
+        -time complexity in big Ω: 
+            Ω(n) = n^2 + n
+                 = n
+                 
+        -time complexity in big O: 
+            O(n) = n^2 + nlogn
+                 = n^2
+                 
+        -time complexity in big θ: 
+            θ(n) = n^2
+=============================================
+2.  P1, P2, P3 = O(n), O(nlogn), O(n)
+    What’s the time complexity ?
+        -time complexity in big Ω:
+            Ω(n) = n + n
+                 = n
+                 
+        -time complexity in big O: 
+            O(n) = n + nlogn
+                 = nlogn
+                 
+        -time complexity in big θ: 
+            θ(n) = n + nlogn
+                 = n
+=============================================
+3.  P1, P2, P3 = O(n), O(nlogn), O(nlogn)
+    What’s the time complexity ?
+        -time complexity in big Ω: 
+            Ω(n) = n + nlogn
+                 = n
+                 
+        -time complexity in big O: n + nlogn
+            O(n) = n + nlogn
+                 = nlogn
+                 
+        -time complexity in big θ: n + nlogn
+            θ(n) = n + nlogn
+                 = nlogn

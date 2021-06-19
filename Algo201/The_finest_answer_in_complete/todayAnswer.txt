@@ -1,0 +1,8 @@
+an+b != (Ω(n^2))
+f(n) = an + b
+
+O(f(n)) = O(n) in worst case
+Ω(f(n)) = Ω(n) in best case
+
+so an + b = Ω(n)
+thus an + b != (Ω(n^2))

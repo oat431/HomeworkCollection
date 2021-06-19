@@ -1,0 +1,24 @@
+Define:Read() is get input from user
+Define:Length(param:String) is return a length of String 
+Define:str.charAt(index:Integer) is return a current index character
+Start
+    Let m <- Read():String
+    Let n <- Read():String
+    Let check <- false : boolean
+    Let startIndex <- 0 : integer
+    For Let i <- 0 ; i<Length(m) ; i++ Then
+        check <- true
+        For Let j<-0 ; j<Length(n) ; j++ Then
+            If n.charAt(j) != m.charAt(j+i) Then
+                check <- false
+                Break
+            Endif
+        Endfor
+        If check Then
+            startIndex <- i
+        Endif
+    Endfor
+    If check Then
+        Display "pattern start at" startIndex
+    Endif
+End

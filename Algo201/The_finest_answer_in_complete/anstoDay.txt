@@ -1,0 +1,26 @@
+A:
+from 
+a1 = 1000 + (8/100 * 1000)
+a2 = a1 + (8/100 * a2)
+a3 = a2 + (8/100 * a3)
+n = n-1 + (8/100 * n-1)
+then
+Deposit(n):
+    if n == 1 Then
+        return t + ((8/100) * t)
+    endif
+    return t + Deposit(t + ((8/100) * t))
+EndDeposit
+
+B: evenif you depot att the end of the year it also count as you depot as the end of year
+from 
+a1 = 1000 + (8/100 * 1000)
+a2 = a1 + (8/100 * a2)
+a3 = a2 + (8/100 * a3)
+n = n-1 + (8/100 * n-1)
+Deposit(n):
+    if n == 1 Then
+        return n + ((8/100) * n)
+    endif
+    return n + Deposit(n-1)
+EndDeposit

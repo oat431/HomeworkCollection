@@ -1,0 +1,28 @@
+Define: Read() will read input from user
+Define: variable <- new DataType[Size:Integer] mean declare array
+Start
+    Let nugget <- new Integer[101]
+    nugget[6] <- True
+    nugget[9] <- True
+    nugget[12] <- True
+
+    For Let i <- 13 ; i < 101 ; i += 1 Then
+        If nugget[i-6] OR nugget[i-9] OR nugget[i-12] Then
+            nugget[i] = True
+        Endif
+    Endfor
+   
+    Let n <- Read()
+    Let cnt <- 0
+
+    For Let i <- 1 ; i < n ; i += 1 Then
+        If nugget[i] Then
+            Display i
+            cnt += 1
+        Endif
+    Endfor
+
+    If cnt == 0 Then
+        Display "no nugget"
+    Endif
+End

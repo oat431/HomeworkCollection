@@ -1,0 +1,9 @@
+Function fill_tile(n):
+    if n == 0 or n == 1 Then
+        return 1
+    Endif
+    return fill_tile(n-1) + fill_tile(n-2) + fill_tile(n-3)
+Endfunction
+
+if we have 1*8 tile 
+it could be total 57 pattern to fill all the tile

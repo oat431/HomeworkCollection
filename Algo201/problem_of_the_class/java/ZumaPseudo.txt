@@ -1,0 +1,116 @@
+Define:new HashTable<KeyDataType,ValueDataType> mean declare a HashTable datastructure
+    In HashTable I define sub method follwing by
+        .containsKey(key:DataType):
+            will return true if HashTable has a key 
+        .get(key:DataType):
+            will return ValueDataType of its key
+        .keySets():
+            will return all set of the key of current HashTable
+        .put(key:DataType, value:DataType):
+            will add a data at the end of the HashTable
+
+Define: new StringLinkedList(word:String) mean declare a String but each character of String will represent as a linkedlist
+    In StringLinkedList I define sub method follwing by
+        .length():
+            will return length of the StringLinkedList
+        .insert(begin:Integer, value:Datatype):
+            will insert value after begin index
+        .toString():
+            will turn StringLinkedList to ordinaryString
+        .deleteCharAt(index:Integer):
+            will delete character of that StringLinkedList
+
+Define: RemoveDuplicate(value:DataType) will return a set of unDuplicate of value
+
+Define: None mean the value is not declare yet
+
+Define: charAt(index:Integer,word:String) mean return current character of word
+
+Define: length(word:String) mean will return a length of word
+
+Define: isEmpty(word:String) will return true if word is actually empty
+
+Define: subString(word:String,begin:Integer,end:Integer) will return substring from beginning to end
+
+Define:read() mean getting input from user
+
+Define:MaxInteger = 999999
+
+Function:DepthFirstSearch(board:String, hitAmount:HashTable<Character,Integer>, temp:HashTable<Character,Integer>) :
+    If temp.containsKey(board) Then
+        return temp.get(board)
+    EndIf
+
+    If isEmpty(board) Then 
+        return 0
+    EndIf
+
+    Let i <- 0
+    Let ans = MaxInteger
+    Let currentBoard <- new StringLinkedList(board)
+    
+    While i < currentBoard.length() Then
+        For c In hitAmount.KeySets() Then
+            If hitAmount.get(c) != None And hitAmount.get(c) > 0 Then
+                currentBoard.insert(i+1,c)
+                hitAmount.put(c,hitAmount.get(c)-1)
+                newBoard <- updateBoard(currentBoard.toString())
+                r <- DepthFirstSearch(newBoard,hitAmount,temp)
+                If r != -1 Then
+                    If ans > r + 1 Then
+                        ans = r + 1
+                    EndIf
+                Endif
+                currentBoard.deleteCharAt(i + 1)
+                hitAmount.put(c,hitAmount.get(c)+1)
+            Endif
+        Endfor
+    Endwhile
+
+    If ans == MaxInteger Then
+        ans = -1
+    Endif
+
+    temp.put(board,ans)
+    return ans
+Endfunction:DepthFirstSearch
+
+Function:updateBoard(board:String):
+    Let i <- 0
+    While i < length(board) Then
+        Let j <- if
+        
+        While j < length(board) And (charAt(i,board) == charAt(j,board)) Then
+            j = j + 1
+        Endwhile
+
+        If j - i >= 3 Then
+            board = subString(board,0,i) + subString(board,j,length(board))
+            return updateBoard(board)
+        Else
+            i = i + 1
+        Endif
+    Endwhile
+    return board
+Endfunction:updateBoard
+
+Function:findMinStep(board:String, hand:String):
+    If board == None Then
+        return 0
+    Endif
+
+    Let temp <- set(hand)
+    Let hitAmount <- new HashTable<Character,Integer>
+
+    For i in temp Then
+        hitAmount.get(i) = hitAmount.get(i) + 1
+    Endfor
+
+    return DepthFirstSearch(board,hitAmount,new HashTable<String,Integer>)
+Endfunction:findMinStep
+
+Start
+    Let board <- read()
+    Let hand <- read()
+    Display findMinStep(board,hand)
+End

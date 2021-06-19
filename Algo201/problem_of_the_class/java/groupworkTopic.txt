@@ -1,0 +1,13 @@
+flow
+coder need to 
+- finish the code 
+    - evident of finished (screen shot)
+    - input output contrains
+- README.txt
+    - pseudocode
+    - real code
+    - time complexity
+    - space complexity
+    - environment
+    - tools
+    - lang
