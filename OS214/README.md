@@ -1,3 +1,3 @@
-# Leave this directory There nothing here now
+# OS 953214
 
-the class will start by after midterm good bye
+The last computer engineering related subject in software engineering course
